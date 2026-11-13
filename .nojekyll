@@ -1,0 +1,2 @@
+# Only needed when deploying from a static GitHub Pages site.
+# This file prevents Jekyll from processing files that begin with underscores.
