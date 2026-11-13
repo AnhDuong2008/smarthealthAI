@@ -1,35 +1,32 @@
-# SmartHealth Community
+# Sống Khỏe — Cẩm nang sức khỏe cộng đồng
 
-Một trang web tĩnh về tư vấn sức khỏe cộng đồng, nhằm chia sẻ thông tin về giữ gìn sức khỏe, phòng bệnh và sơ cứu ban đầu.
+Trang web tĩnh bằng HTML, CSS và JavaScript thuần, cung cấp kiến thức sức khỏe cộng đồng bằng tiếng Việt: phòng bệnh cơ bản, nhận biết và phòng ngừa sốt rét, sơ cứu một số tình huống thường gặp và dấu hiệu cần gọi cấp cứu.
 
-## Tính năng
-- Trang chủ tối ưu cho GitHub Pages
-- Giao diện đơn giản, thân thiện với người dùng
-- Chia sẻ các thông tin về:
-  - Thói quen giữ gìn sức khỏe
-  - Dinh dưỡng và vận động
-  - Các biện pháp sơ cứu cơ bản
-  - Lời khuyên chăm sóc sức khỏe cho gia đình và cộng đồng
+## Chạy thử
 
-## Triển khai trên GitHub Pages
-1. Đẩy repository lên GitHub.
-2. Vào Settings > Pages.
-3. Chọn Source: Deploy from a branch.
-4. Chọn Branch: main, folder: /root.
-5. Lưu lại và chờ GitHub build.
-6. Sau khi hoàn tất, trang sẽ có URL dạng:
-   `https://<username>.github.io/<repo-name>/`
-
-## Các file chính
-- `index.html`: giao diện trang web
-- `styles.css`: thiết kế và responsive
-- `script.js`: JavaScript nhỏ cho hiệu ứng
-
-## Chạy cục bộ
-Mở file `index.html` trực tiếp trong trình duyệt hoặc dùng máy chủ tĩnh đơn giản như:
+Mở `index.html` trong trình duyệt, hoặc chạy máy chủ web tĩnh:
 
 ```bash
 python -m http.server 8000
 ```
 
-Sau đó truy cập: `http://localhost:8000`
+Sau đó mở `http://localhost:8000`.
+
+## Triển khai trên GitHub Pages
+
+1. Mở repository **Settings → Pages**.
+2. Trong **Build and deployment**, chọn **Deploy from a branch**.
+3. Chọn nhánh `main` và thư mục `/(root)`, sau đó nhấn **Save**.
+4. Đợi GitHub Pages hoàn tất triển khai. Địa chỉ trang thường có dạng `https://<username>.github.io/<repository>/`.
+
+Trang không cần bước build hay backend. `.nojekyll` đã có sẵn trong repository.
+
+## Lưu ý sức khỏe
+
+Nội dung chỉ nhằm mục đích giáo dục và tham khảo, không thay thế tư vấn, chẩn đoán hoặc điều trị của nhân viên y tế. Với dấu hiệu cấp cứu tại Việt Nam, gọi **115**. Khi nghi ngờ sốt rét, đến cơ sở y tế để được xét nghiệm; không tự mua thuốc điều trị.
+
+## Nguồn tham khảo trên trang
+
+- [WHO — Malaria](https://www.who.int/news-room/fact-sheets/detail/malaria)
+- [WHO — Hand hygiene](https://www.who.int/health-topics/hand-hygiene)
+- [NHS — Burns and scalds treatment](https://www.nhs.uk/conditions/burns-and-scalds/treatment/)

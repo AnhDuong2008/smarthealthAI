@@ -2,261 +2,141 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Trang web tư vấn sức khỏe cộng đồng, chia sẻ phương pháp giữ gìn sức khỏe, phòng bệnh và sơ cứu cơ bản."
-    />
-    <title>SmartHealth Community</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f7f2" />
+    <meta name="description" content="Cẩm nang sức khỏe cộng đồng: phòng bệnh sốt rét, chăm sóc sức khỏe hằng ngày và hướng dẫn sơ cứu ban đầu an toàn." />
+    <title>Sống Khỏe — Cẩm nang sức khỏe cộng đồng</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="container nav">
-        <div class="brand">
-          <div class="brand-mark">+</div>
-          <span>SmartHealth<span>Community</span></span>
-        </div>
-        <nav class="menu" aria-label="Main navigation">
-          <a href="#home">Trang chủ</a>
-          <a href="#health">Giữ gìn sức khỏe</a>
-          <a href="#first-aid">Sơ cứu</a>
-          <a href="#tips">Mẹo hàng ngày</a>
-          <a href="#contact">Liên hệ</a>
+    <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" aria-label="Sống Khỏe - về trang chủ">
+          <span class="brand-mark" aria-hidden="true">✳</span>
+          <span>Sống Khỏe<span class="brand-dot">.</span><small>CẨM NANG CỘNG ĐỒNG</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Mở menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-menu" id="site-menu" aria-label="Điều hướng chính">
+          <a href="#phong-benh">Phòng bệnh</a>
+          <a href="#sot-ret">Sốt rét</a>
+          <a href="#so-cuu">Sơ cứu</a>
+          <a href="#tham-khao">Tham khảo</a>
         </nav>
-        <a class="btn btn-primary" href="#first-aid">Xem hướng dẫn</a>
+        <a class="nav-cta" href="#cap-cuu">Khi nào cần cấp cứu <span aria-hidden="true">↗</span></a>
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <section class="hero" id="home">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <span class="tag">Tư vấn sức khỏe cộng đồng</span>
-            <h1>Giữ gìn sức khỏe mỗi ngày, chủ động phòng bệnh & sơ cứu đúng cách</h1>
-            <p>
-              Cung cấp những thông tin đơn giản, thiết thực và dễ áp dụng giúp cộng đồng
-              sống khỏe mạnh, phòng ngừa bệnh tật và xử lý tình huống cấp cứu ban đầu an toàn.
-            </p>
+            <div class="eyebrow"><span class="pulse-dot"></span> Kiến thức dễ hiểu · Hành động thiết thực</div>
+            <h1>Chăm sóc sức khỏe,<br /><span>bắt đầu từ hôm nay.</span></h1>
+            <p class="hero-lead">Cẩm nang ngắn gọn dành cho bạn và gia đình: chủ động phòng bệnh, nhận biết dấu hiệu cần chú ý và sơ cứu ban đầu an toàn.</p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#health">Khám phá ngay</a>
-              <a class="btn btn-secondary" href="#first-aid">Hướng dẫn sơ cứu</a>
+              <a class="button button-dark" href="#phong-benh">Khám phá cẩm nang <span aria-hidden="true">↓</span></a>
+              <a class="text-link" href="#so-cuu">Xem hướng dẫn sơ cứu <span aria-hidden="true">→</span></a>
             </div>
-            <ul class="stats">
-              <li>
-                <strong>6+</strong>
-                <span>Khuyến nghị sức khỏe</span>
-              </li>
-              <li>
-                <strong>24/7</strong>
-                <span>Nhắc nhở chăm sóc bản thân</span>
-              </li>
-              <li>
-                <strong>100%</strong>
-                <span>Dễ thực hiện trong cộng đồng</span>
-              </li>
-            </ul>
+            <div class="hero-note"><span aria-hidden="true">ⓘ</span> Thông tin tham khảo, không thay thế chẩn đoán hoặc điều trị của nhân viên y tế.</div>
           </div>
-
-          <div class="hero-card">
-            <div class="mini-panel">
-              <p>Nhịp tim khỏe mạnh</p>
-              <strong>72 bpm</strong>
-              <div class="chart-bars" aria-hidden="true">
-                <span style="height: 35%"></span>
-                <span style="height: 45%"></span>
-                <span style="height: 60%"></span>
-                <span style="height: 70%"></span>
-                <span style="height: 62%"></span>
-                <span style="height: 82%"></span>
-                <span style="height: 92%"></span>
-              </div>
-            </div>
-            <div class="checklist-card">
-              <h3>Checklist hàng ngày</h3>
-              <label><input type="checkbox" checked /> Uống đủ nước</label>
-              <label><input type="checkbox" checked /> Đi ngủ đủ giấc</label>
-              <label><input type="checkbox" checked /> Vệ sinh tay</label>
-              <label><input type="checkbox" checked /> Tập thể dục nhẹ</label>
-            </div>
+          <div class="hero-art" aria-label="Minh họa chăm sóc sức khỏe cộng đồng" role="img">
+            <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+            <div class="art-sun"></div>
+            <div class="art-card card-top"><span class="art-icon green-icon">＋</span><span><b>Chủ động phòng bệnh</b><small>Mỗi ngày một thói quen tốt</small></span></div>
+            <div class="art-card card-bottom"><span class="art-icon yellow-icon">♥</span><span><b>Sơ cứu đúng cách</b><small>Bình tĩnh · An toàn · Kịp thời</small></span></div>
+            <div class="art-center"><span class="center-cross">＋</span><span>KHỎE<br />MẠNH</span></div>
+            <span class="spark spark-one">✳</span><span class="spark spark-two">✦</span>
           </div>
         </div>
       </section>
 
-      <section class="section" id="health">
+      <section class="quick-strip" aria-label="Nội dung chính">
+        <div class="container quick-inner">
+          <span class="quick-label">TRONG CẨM NANG NÀY</span>
+          <a href="#phong-benh"><span>01</span> Phòng bệnh cơ bản</a>
+          <a href="#sot-ret"><span>02</span> Hiểu về sốt rét</a>
+          <a href="#so-cuu"><span>03</span> Sơ cứu ban đầu</a>
+        </div>
+      </section>
+
+      <section class="section prevention-section" id="phong-benh">
         <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Giữ gìn sức khỏe</span>
-            <h2>Những thói quen đơn giản giúp cơ thể khỏe mạnh mỗi ngày</h2>
+          <div class="section-heading heading-row">
+            <div><span class="eyebrow">NỀN TẢNG SỨC KHỎE</span><h2>Phòng bệnh từ những<br /><span>việc nhỏ mỗi ngày.</span></h2></div>
+            <p>Thói quen tốt giúp giảm nguy cơ mắc bệnh và bảo vệ những người xung quanh. Hãy bắt đầu từ điều phù hợp với bạn.</p>
           </div>
-
-          <div class="card-grid">
-            <article class="info-card">
-              <div class="icon">💧</div>
-              <h3>Uống đủ nước</h3>
-              <p>
-                Mỗi ngày uống đủ 1,5 - 2 lít nước, nhất là khi vận động, thời tiết nóng hoặc có triệu chứng mệt.
-              </p>
-            </article>
-
-            <article class="info-card">
-              <div class="icon">🥗</div>
-              <h3>Dinh dưỡng cân bằng</h3>
-              <p>
-                Bổ sung rau xanh, trái cây, protein, tinh bột phức hợp và hạn chế đồ ngọt, thức ăn nhiều dầu mỡ.
-              </p>
-            </article>
-
-            <article class="info-card">
-              <div class="icon">🏃</div>
-              <h3>Vận động thường xuyên</h3>
-              <p>
-                Tập nhẹ 30 phút mỗi ngày như đi bộ, yoga hoặc kéo giãn giúp tim mạch khỏe và giảm căng thẳng.
-              </p>
-            </article>
-
-            <article class="info-card">
-              <div class="icon">🛌</div>
-              <h3>Ngủ đủ giấc</h3>
-              <p>
-                Ngủ từ 7 - 8 tiếng mỗi đêm để cơ thể phục hồi, tăng miễn dịch và cải thiện tâm trạng.
-              </p>
-            </article>
-
-            <article class="info-card">
-              <div class="icon">🧼</div>
-              <h3>Vệ sinh cá nhân</h3>
-              <p>
-                Rửa tay thường xuyên, giữ vệ sinh môi trường và che chắn khi bị ho, sốt, cảm cúm.
-              </p>
-            </article>
-
-            <article class="info-card">
-              <div class="icon">😌</div>
-              <h3>Quản lý stress</h3>
-              <p>
-                Nghỉ ngơi hợp lý, thư giãn, giao tiếp và duy trì tinh thần tích cực giúp tăng sức đề kháng.
-              </p>
-            </article>
+          <div class="prevention-grid">
+            <article class="prevention-card"><div class="card-topline"><span class="card-number">01</span><span class="card-emoji" aria-hidden="true">🧼</span></div><h3>Rửa tay thường xuyên</h3><p>Dùng xà phòng và nước sạch, nhất là trước khi ăn, sau khi đi vệ sinh và khi tay bẩn. Có thể dùng dung dịch sát khuẩn khi không có nước.</p><a href="#tham-khao" class="card-link">Tìm hiểu thêm <span aria-hidden="true">↗</span></a></article>
+            <article class="prevention-card"><div class="card-topline"><span class="card-number">02</span><span class="card-emoji" aria-hidden="true">🥗</span></div><h3>Ăn uống an toàn</h3><p>Ăn chín, uống nước sạch; rửa rau quả và tách riêng thực phẩm sống với thức ăn đã nấu chín. Bảo quản thực phẩm đúng cách.</p><a href="#tham-khao" class="card-link">Tìm hiểu thêm <span aria-hidden="true">↗</span></a></article>
+            <article class="prevention-card"><div class="card-topline"><span class="card-number">03</span><span class="card-emoji" aria-hidden="true">💉</span></div><h3>Tiêm chủng đầy đủ</h3><p>Thực hiện tiêm chủng theo lịch khuyến nghị và hỏi nhân viên y tế về mũi tiêm phù hợp với tuổi, tình trạng sức khỏe và lịch sử tiêm.</p><a href="#tham-khao" class="card-link">Tìm hiểu thêm <span aria-hidden="true">↗</span></a></article>
+            <article class="prevention-card"><div class="card-topline"><span class="card-number">04</span><span class="card-emoji" aria-hidden="true">🌬️</span></div><h3>Giữ không gian thông thoáng</h3><p>Mở cửa khi phù hợp, tránh khói thuốc và che miệng khi ho hoặc hắt hơi. Ở nơi đông người, cân nhắc biện pháp bảo vệ theo khuyến cáo y tế.</p><a href="#tham-khao" class="card-link">Tìm hiểu thêm <span aria-hidden="true">↗</span></a></article>
           </div>
         </div>
       </section>
 
-      <section class="section accent" id="first-aid">
-        <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Biện pháp sơ cứu</span>
-            <h2>Hướng dẫn sơ cứu ban đầu an toàn và hiệu quả</h2>
+      <section class="malaria-section" id="sot-ret">
+        <div class="container malaria-grid">
+          <div class="malaria-intro">
+            <span class="eyebrow eyebrow-light">TÌM HIỂU BỆNH</span>
+            <h2>Sốt rét:<br />đừng chờ cơn sốt tự qua.</h2>
+            <p>Sốt rét là bệnh do ký sinh trùng lây truyền qua muỗi Anopheles mang mầm bệnh đốt. Bệnh có thể trở nặng nhanh, nhưng phát hiện và điều trị sớm giúp giảm nguy cơ biến chứng.</p>
+            <a class="button button-light" href="https://www.who.int/news-room/fact-sheets/detail/malaria" target="_blank" rel="noopener noreferrer">Thông tin từ WHO <span aria-hidden="true">↗</span></a>
+            <div class="malaria-deco" aria-hidden="true">✳</div>
           </div>
-
-          <div class="aid-layout">
-            <div class="aid-list">
-              <div class="aid-item">
-                <h3>1. Chảy máu</h3>
-                <p>Rửa tay, băng hoặc ép sát vết thương bằng khăn sạch, giữ nguyên vị trí và thay băng nếu cần.</p>
-              </div>
-
-              <div class="aid-item">
-                <h3>2. Sốt, đau đầu, mệt mỏi</h3>
-                <p>Uống nước, nghỉ ngơi, đo thân nhiệt, giữ mát và theo dõi nếu sốt kéo dài trên 3 ngày.</p>
-              </div>
-
-              <div class="aid-item">
-                <h3>3. Ngộ độc thực phẩm</h3>
-                <p>Uống nhiều nước, tránh ăn lại thức ăn gây bệnh, nếu nôn ói liên tục hoặc khó thở hãy tìm hỗ trợ y tế.</p>
-              </div>
-
-              <div class="aid-item">
-                <h3>4. Gãy xương / đau nhức nghiêm trọng</h3>
-                <p>Không di chuyển nếu có thương tích nghiêm trọng, cố định vị trí bị thương và liên hệ nhân viên y tế.</p>
-              </div>
-            </div>
-
-            <div class="warning-card">
-              <h3>Khẩn cấp cần gọi hỗ trợ ngay</h3>
-              <ul>
-                <li>Người bị khó thở, đau ngực, mất ý thức</li>
-                <li>Đau đầu dữ dội, co giật, mất kiểm soát cơ thể</li>
-                <li>Dị ứng nặng: sưng mặt, khó thở, phát ban nhiều</li>
-                <li>Chảy máu không cầm được hoặc chấn thương mạnh</li>
-              </ul>
-              <p class="note">
-                Luôn ưu tiên an toàn và tìm sự hỗ trợ từ cơ sở y tế gần nhất nếu tình trạng nặng hoặc không cải thiện.
-              </p>
-            </div>
+          <div class="malaria-info">
+            <article class="malaria-point"><span class="point-icon">01</span><div><h3>Nhận biết dấu hiệu</h3><p>Sốt, rét run, đau đầu, mệt mỏi hoặc đau nhức cơ thể có thể là triệu chứng. Dấu hiệu thường xuất hiện sau khi đến vùng có nguy cơ, nhưng không thể tự xác định bệnh chỉ bằng triệu chứng.</p></div></article>
+            <article class="malaria-point"><span class="point-icon">02</span><div><h3>Đi khám và xét nghiệm sớm</h3><p>Nếu sốt trong hoặc sau chuyến đi đến vùng có sốt rét, hãy đến cơ sở y tế sớm và nói rõ lịch trình. Cần xét nghiệm; không tự mua thuốc sốt rét hoặc trì hoãn việc khám.</p></div></article>
+            <article class="malaria-point"><span class="point-icon">03</span><div><h3>Tránh muỗi đốt</h3><p>Ngủ màn, ưu tiên màn tẩm hóa chất khi có; mặc quần áo dài, dùng thuốc xua muỗi theo nhãn và lắp lưới chắn. Hỏi cơ sở y tế về biện pháp phù hợp nếu đi vùng nguy cơ.</p></div></article>
+            <div class="urgent-inline"><span aria-hidden="true">!</span><p><strong>Cần trợ giúp khẩn cấp:</strong> lú lẫn, co giật, khó thở, ngất hoặc tình trạng xấu đi nhanh. Gọi 115 hoặc đến cơ sở cấp cứu gần nhất.</p></div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="tips">
+      <section class="section first-aid-section" id="so-cuu">
         <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Mẹo thực tế</span>
-            <h2>Những cách chăm sóc sức khỏe hiệu quả cho cả gia đình</h2>
+          <div class="section-heading heading-row">
+            <div><span class="eyebrow">BÌNH TĨNH VÀ AN TOÀN</span><h2>Sơ cứu ban đầu<br /><span>trong vài tình huống.</span></h2></div>
+            <p>Trước tiên, kiểm tra hiện trường an toàn và gọi trợ giúp nếu chấn thương nặng. Sơ cứu không thay thế chăm sóc chuyên môn.</p>
           </div>
+          <div class="aid-grid">
+            <article class="aid-card"><div class="aid-icon aid-coral">🩹</div><div class="aid-title"><span>01 / VẾT THƯƠNG</span><h3>Chảy máu</h3></div><ol><li>Rửa tay hoặc dùng găng nếu có; che vết thương bằng gạc sạch.</li><li>Dùng lực ép trực tiếp, liên tục lên vết thương.</li><li>Nếu máu thấm qua, đặt thêm gạc lên trên và tiếp tục ép; gọi cấp cứu nếu chảy nhiều hoặc không cầm.</li></ol></article>
+            <article class="aid-card"><div class="aid-icon aid-yellow">🔥</div><div class="aid-title"><span>02 / BỎNG NHIỆT</span><h3>Bỏng</h3></div><ol><li>Đưa người bị nạn ra khỏi nguồn nhiệt nếu an toàn.</li><li>Làm mát vùng bỏng dưới vòi nước sạch mát trong 20 phút.</li><li>Không chườm đá, bôi kem/dầu hay làm vỡ bóng nước. Bỏng rộng, sâu hoặc ở mặt cần được khám khẩn cấp.</li></ol></article>
+            <article class="aid-card"><div class="aid-icon aid-lilac">⚡</div><div class="aid-title"><span>03 / CO GIẬT</span><h3>Cơn co giật</h3></div><ol><li>Dọn vật cứng xung quanh, kê vật mềm dưới đầu và canh thời gian.</li><li>Không ghì giữ, không cho bất cứ vật gì vào miệng và không cho ăn uống.</li><li>Khi cơn giật dừng, nếu người bệnh còn bất tỉnh nhưng vẫn thở, đặt nằm nghiêng an toàn và theo dõi.</li></ol></article>
+            <article class="aid-card"><div class="aid-icon aid-blue">🦴</div><div class="aid-title"><span>04 / CHẤN THƯƠNG</span><h3>Nghi gãy xương</h3></div><ol><li>Giữ người bệnh yên; đỡ cố định vùng đau ở tư thế tìm thấy.</li><li>Không nắn xương hoặc cố đưa khớp về vị trí cũ.</li><li>Gọi cấp cứu nếu chấn thương nặng, biến dạng rõ, tê lạnh hoặc có vết thương hở.</li></ol></article>
+          </div>
+          <p class="aid-disclaimer"><span aria-hidden="true">✳</span> Không chắc phải làm gì? Gọi cấp cứu, làm theo hướng dẫn của tổng đài và tránh các thao tác vượt quá khả năng của bạn.</p>
+        </div>
+      </section>
 
-          <div class="tips-grid">
-            <div class="tip-box">
-              <span>✅</span>
-              <h3>Rửa tay đúng cách</h3>
-              <p>Sau khi đi ra ngoài, trước khi ăn và sau khi tiếp xúc với người bệnh.</p>
-            </div>
+      <section class="emergency-section" id="cap-cuu">
+        <div class="container emergency-inner">
+          <div class="emergency-mark" aria-hidden="true">!</div>
+          <div><span class="eyebrow eyebrow-light">DẤU HIỆU NGUY HIỂM</span><h2>Gọi 115 khi có tình huống cấp cứu.</h2><p>Khó thở, đau ngực dữ dội, bất tỉnh, co giật kéo dài, chảy máu nhiều hoặc tình trạng xấu đi nhanh — gọi cấp cứu y tế tại Việt Nam và làm theo hướng dẫn của tổng đài.</p></div>
+          <a class="call-button" href="tel:115" aria-label="Gọi cấp cứu 115">Gọi 115 <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
 
-            <div class="tip-box">
-              <span>✅</span>
-              <h3>Giữ nhà cửa thông thoáng</h3>
-              <p>Hạn chế bụi bẩn, khói thuốc và nơi ẩm mốc gây kích ứng đường hô hấp.</p>
-            </div>
-
-            <div class="tip-box">
-              <span>✅</span>
-              <h3>Thường xuyên kiểm tra sức khỏe</h3>
-              <p>Đo huyết áp, kiểm tra thân nhiệt và theo dõi các dấu hiệu bất thường sớm.</p>
-            </div>
+      <section class="section reference-section" id="tham-khao">
+        <div class="container reference-inner">
+          <div><span class="eyebrow">ĐỌC THÊM</span><h2>Nguồn tham khảo<br /><span>đáng tin cậy.</span></h2><p>Thông tin sức khỏe thay đổi theo tình huống và hướng dẫn chuyên môn. Tham khảo nguồn y tế chính thống và hỏi nhân viên y tế khi cần.</p></div>
+          <div class="reference-links">
+            <a href="https://www.who.int/news-room/fact-sheets/detail/malaria" target="_blank" rel="noopener noreferrer"><span>WHO · Tổ chức Y tế Thế giới</span><strong>Thông tin về sốt rét <b>↗</b></strong></a>
+            <a href="https://www.who.int/health-topics/hand-hygiene" target="_blank" rel="noopener noreferrer"><span>WHO · Tổ chức Y tế Thế giới</span><strong>Vệ sinh tay <b>↗</b></strong></a>
+            <a href="https://www.nhs.uk/conditions/burns-and-scalds/treatment/" target="_blank" rel="noopener noreferrer"><span>NHS · Dịch vụ Y tế Quốc gia Anh</span><strong>Sơ cứu bỏng <b>↗</b></strong></a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer" id="contact">
-      <div class="container footer-grid">
-        <div>
-          <div class="brand footer-brand">
-            <div class="brand-mark">+</div>
-            <span>SmartHealth<span>Community</span></span>
-          </div>
-          <p>
-            Kết nối cộng đồng với thông tin sức khỏe, lối sống lành mạnh và hướng dẫn sơ cứu cơ bản.
-          </p>
-        </div>
-
-        <div>
-          <h4>Liên kết nhanh</h4>
-          <ul>
-            <li><a href="#home">Trang chủ</a></li>
-            <li><a href="#health">Sức khỏe</a></li>
-            <li><a href="#first-aid">Sơ cứu</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4>Thông tin hỗ trợ</h4>
-          <ul>
-            <li>Hotline: 1900 1234</li>
-            <li>Trạm y tế địa phương</li>
-            <li>Tư vấn sức khỏe cộng đồng</li>
-          </ul>
-        </div>
-      </div>
-      <div class="bottom-bar">© 2026 SmartHealth Community. Mọi thông tin chỉ mang tính tham khảo.</div>
+    <footer class="site-footer">
+      <div class="container footer-inner"><a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">✳</span><span>Sống Khỏe<span class="brand-dot">.</span><small>CẨM NANG CỘNG ĐỒNG</small></span></a><p>Nội dung mang tính giáo dục và tham khảo, không thay thế tư vấn, chẩn đoán hoặc điều trị y tế. Trong trường hợp khẩn cấp, gọi 115.</p><span class="copyright">© <span id="year">2026</span> Sống Khỏe</span></div>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
